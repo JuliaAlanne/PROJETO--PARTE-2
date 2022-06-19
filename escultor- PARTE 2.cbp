@@ -39,6 +39,7 @@
 		<Unit filename="include/FiguraGeometrica.h" />
 		<Unit filename="include/PutEllipsoid.h" />
 		<Unit filename="include/PutSphere.h" />
+		<Unit filename="include/cutBox.h" />
 		<Unit filename="include/cutVoxel.h" />
 		<Unit filename="include/putBox.h" />
 		<Unit filename="include/putVoxel.h" />
@@ -53,9 +54,6 @@
 		<Unit filename="src/putBox.cpp" />
 		<Unit filename="src/putVoxel.cpp" />
 		<Extensions>
-			<code_completion />
-			<envvars />
-			<debugger />
 			<lib_finder disable_auto="1" />
 		</Extensions>
 	</Project>
