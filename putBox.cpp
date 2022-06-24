@@ -1,17 +1,26 @@
 #include "PutBox.h"
+#include <iostream>
 
-PutBox::PutBox()
+PutBox::PutBox(int x0, int x1, int y0, int y1, int z0, int z1,float r, float g,float b, float alpha)
 {
-    x0=(x0<0) ? 0: x0;
-    x1= (x1> this->nx) ? this -> nx : x1;
-    y0=(y0<0) ? 0:y0;
-    y1= (x1> this->ny) ? this -> ny : y1;
-    z0=(z0<0) ? 0 : z0;
-    z1= (z1> this->nz )? this -> nz : z1;
+  this -> x0=x0;
+  this -> x1=x1;
+  this -> y0=y0;
+  this -> y1=y1;
+  this -> z0=z0;
+  this -> z1=z1;
+  this->r = r;
+  this->g = g;
+  this->b = b;
+  this->alpha = alpha;
+}
+void PutBox:: draw(Sculptor&t)
+{
+    t.setColor(r,g,b,alpha);
     for (int i=x0;i<x1;i++){
         for (int j=y0;j<y1;j++){
             for (int k=z0;k<z1;k++){
-                    this ->putVoxel(i,j,k);
+                    t.putVoxel(i,j,k);
             }
         }
 

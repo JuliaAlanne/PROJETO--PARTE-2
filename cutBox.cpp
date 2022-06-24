@@ -1,17 +1,21 @@
 #include "CutBox.h"
-
-CutBox::CutBox()
+#include <iostream>
+CutBox::CutBox(int _x0, int _x1, int _y0, int _y1, int _z0, int _z1)
 {
-    x0=(x0<0) ? 0: x0;
-    x1= (x1> this->nx) ? this-> nx:x1;
-    y0=(y0<0) ? 0:y0;
-    y1= (x1> this->ny) ? this ->ny:y1;
-    z0=(z0<0) ? 0 : z0;
-    z1= (z1> this->nz) ? this ->nz:z1;
+    x0=_x0;
+    x1=_x1;
+    y0=_y0;
+    y1=_y1;
+    z0=_z0;
+    z1=_z1;
+
+}
+void CutBox::draw(Sculptor &t)
+{
     for (int i=0;i<x0;i++){
         for (int j=0;j<y0;j++){
             for (int k=0;k<z0;k++){
-                    this ->cutVoxel(i,j,k);
+                t.cutVoxel(i,j,k);
             }
         }
 
@@ -19,7 +23,7 @@ CutBox::CutBox()
 
 }
 
+
 CutBox::~CutBox()
 {
-    //dtor
 }

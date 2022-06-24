@@ -2,10 +2,12 @@
 
 FiguraGeometrica::FiguraGeometrica()
 {
-    //ctor
+
+
 }
+
 
 FiguraGeometrica::~FiguraGeometrica()
 {
-    //dtor
+
 }

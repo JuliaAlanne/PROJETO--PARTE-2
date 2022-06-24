@@ -1,17 +1,28 @@
 #include "PutSphere.h"
+#include <iostream>
 
-PutSphere::PutSphere()
+PutSphere::PutSphere(int _xcenter, int _ycenter, int _zcenter, int _r,float r, float g,float b, float alpha)
 {
-  for (int i=xcenter-r;i<xcenter+r;i++){
-        for (int j=ycenter-r;j<ycenter+r;j++){
-            for (int k=zcenter-r;k<zcenter+r;k++){
-                 if(pow(k - zcenter, 2) + pow(j - ycenter, 2) + pow(i - xcenter, 2) < pow(r, 2)){
-                    this ->putVoxel(i,j,k);
+    xcenter = _xcenter;
+    ycenter = _ycenter;
+    zcenter = _zcenter;
+    raio = _r;
+
+}
+void PutSphere::draw(Sculptor &t)
+{
+  t.setColor(r,g,b,alpha);
+  for (int i=xcenter-raio;i<xcenter+raio;i++){
+        for (int j=ycenter-raio;j<ycenter+raio;j++){
+            for (int k=zcenter-raio;k<zcenter+raio;k++){
+                 if(pow(k - zcenter, 2) + pow(j - ycenter, 2) + pow(i - xcenter, 2) < pow(raio, 2)){
+                    t.putVoxel(i,j,k);
                  }
             }
         }
 
-    }}
+    }
+}
 
 PutSphere::~PutSphere()
 {

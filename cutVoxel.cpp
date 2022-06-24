@@ -1,11 +1,15 @@
 #include "CutVoxel.h"
-
-CutVoxel::CutVoxel()
+#include <iostream>
+#include"Sculptor.h"
+CutVoxel::CutVoxel(int x, int y, int z)
 {
-    this ->v[x][y][z].isOn=false;
+    this -> x =x ;
+    this -> y = y;
+    this -> z = z;
 }
-
+void CutVoxel::draw(Sculptor &t){
+    t.cutVoxel(x,y,z);
+}
 CutVoxel::~CutVoxel()
 {
-    //dtor
 }
