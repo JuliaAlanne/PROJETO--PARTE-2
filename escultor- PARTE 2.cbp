@@ -37,8 +37,10 @@
 		<Unit filename="include/CutEllipsoid.h" />
 		<Unit filename="include/CutSphere.h" />
 		<Unit filename="include/FiguraGeometrica.h" />
+		<Unit filename="include/Interpretadordearquivos.h" />
 		<Unit filename="include/PutEllipsoid.h" />
 		<Unit filename="include/PutSphere.h" />
+		<Unit filename="include/Sculptor.h" />
 		<Unit filename="include/cutBox.h" />
 		<Unit filename="include/cutVoxel.h" />
 		<Unit filename="include/putBox.h" />
@@ -47,12 +49,17 @@
 		<Unit filename="src/CutEllipsoid.cpp" />
 		<Unit filename="src/CutSphere.cpp" />
 		<Unit filename="src/FiguraGeometrica.cpp" />
+		<Unit filename="src/Interpretadordearquivos.cpp" />
 		<Unit filename="src/PutEllipsoid.cpp" />
 		<Unit filename="src/PutSphere.cpp" />
+		<Unit filename="src/Sculptor.cpp" />
 		<Unit filename="src/cutBox.cpp" />
 		<Unit filename="src/cutVoxel.cpp" />
 		<Unit filename="src/putBox.cpp" />
 		<Unit filename="src/putVoxel.cpp" />
+		<Unit filename="testeOFFp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
