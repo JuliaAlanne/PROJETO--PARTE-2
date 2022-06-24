@@ -16,27 +16,29 @@
 int main(){
     Sculptor *s;
 
-    Interpretadordearquivos interp;
+    Interpretadordearquivos inter;
 
     std::vector<FiguraGeometrica*> fg;
 
-    fg = interp.parse("testeOFF.off");
+    fg = inter.parse("testeOFF.off");
 
-    s = new Sculptor(interp.getDx(), interp.getDy(), interp.getDz());
+    s = new Sculptor(inter.getDx(), inter.getDy(), inter.getDz());
 
     for(size_t i=0; i<fg.size(); i++) {
-        std::cout << "Desenho\n";
-        fg[i]->draw(*s);
+        std::cout << "Desenhando\n";
+        fg[i] -> draw(*s);
     }
 
 
-    s->writeOFF((char*)"testeOFF.off");
+    s-> writeOFF((char*)"testeOFF.off");
 
     for(size_t i=0; i<fg.size(); i++) {
         delete fg[i];
     }
 
     delete s;
+
+
     return 0;
 
-    }
+}

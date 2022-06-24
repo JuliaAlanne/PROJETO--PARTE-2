@@ -18,3 +18,5 @@ void PutVoxel:: draw(Sculptor &t)
     t.putVoxel(x,y,z);
 
 }
+PutVoxel::~PutVoxel(){
+}

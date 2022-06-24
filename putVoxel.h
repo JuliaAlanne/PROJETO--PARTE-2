@@ -7,11 +7,10 @@
 
 class PutVoxel : public FiguraGeometrica
 {
-    private:
     int x,  y,  z;
     public:
         PutVoxel(int x, int y, int z,float r, float g,float b, float alpha);
-        virtual ~PutVoxel();
+        ~PutVoxel();
         void draw(Sculptor &t);
 
 

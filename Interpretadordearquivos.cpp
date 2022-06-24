@@ -11,13 +11,12 @@
 #include "CutSphere.h"
 #include "CutEllipsoid.h"
 
-
 Interpretadordearquivos::Interpretadordearquivos()
 {
 }
-std::vector <FiguraGeometrica*> Interpretadordearquivos :: parse(std::string filename)
+std::vector <FiguraGeometrica *> Interpretadordearquivos :: parse(std::string filename)
 {
-    std :: vector <FiguraGeometrica*> fg;
+    std :: vector <FiguraGeometrica *> fg;
         std :: ifstream fin;
         std :: stringstream ss;
         std :: string s,token;
@@ -29,8 +28,7 @@ std::vector <FiguraGeometrica*> Interpretadordearquivos :: parse(std::string fil
         std::cout << "O arquivo não foi aberto" << filename << std::endl;
         exit(0);
     }
-        while(fin.good()){
-
+    while(fin.good()){
         std::getline(fin, s);
         if(fin.good()) {
             // insere a string s no fluxo ss

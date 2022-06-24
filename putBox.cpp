@@ -9,10 +9,10 @@ PutBox::PutBox(int x0, int x1, int y0, int y1, int z0, int z1,float r, float g,f
   this -> y1=y1;
   this -> z0=z0;
   this -> z1=z1;
-  this->r = r;
-  this->g = g;
-  this->b = b;
-  this->alpha = alpha;
+  this-> r = r;
+  this-> g = g;
+  this-> b = b;
+  this-> alpha = alpha;
 }
 void PutBox:: draw(Sculptor&t)
 {
