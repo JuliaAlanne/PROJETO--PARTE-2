@@ -1,0 +1,5 @@
+dim 100 200 100
+PutVoxel 50 100 50 1 0 0 1
+PutBox 1 9 1 9 1 9 0 0 1 1
+PutSphere 20 20 20 7 1 0 0 1
+PutEllipsoid 20 5 15 4 3 2 1 1 0 1
