@@ -2,18 +2,18 @@
 #define CUTSPHERE_H
 
 #include <FiguraGeometrica.h>
+#include "Sculptor.h"
 
 
 class CutSphere : public FiguraGeometrica
 {
-    int xcenter, int ycenter, int zcenter, int r
+    private:
+        int xcenter, ycenter,  zcenter, r;
     public:
         CutSphere(int xcenter, int ycenter, int zcenter, int r);
         virtual ~CutSphere();
+        void draw(Sculptor &t);
 
-    protected:
-
-    private:
 };
 
 #endif // CUTSPHERE_H

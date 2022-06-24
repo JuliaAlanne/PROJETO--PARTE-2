@@ -1,7 +1,7 @@
 #ifndef FIGURAGEOMETRICA_H
 #define FIGURAGEOMETRICA_H
-
-
+#include <cmath>
+#include "Sculptor.h"
 class FiguraGeometrica
 {
     protected:
@@ -10,7 +10,7 @@ class FiguraGeometrica
         FiguraGeometrica();
         virtual ~FiguraGeometrica();
 
-        virtual void draw(Sculptor &sc)=0;
+        virtual void draw(Sculptor &t)=0;
 
 };
 

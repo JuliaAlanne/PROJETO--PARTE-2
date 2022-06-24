@@ -2,18 +2,18 @@
 #define CUTELLIPSOID_H
 
 #include <FiguraGeometrica.h>
-
+#include "Sculptor.h"
 
 class CutEllipsoid : public FiguraGeometrica
 {
-    int xcenter, int ycenter, int zcenter, int rx, int ry, int rz;
+
+    private:
+        int xcenter, ycenter, zcenter,  rx, ry, rz;
     public:
         CutEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry, int rz);
         virtual ~CutEllipsoid();
+        void draw(Sculptor &t);
 
-    protected:
-
-    private:
 };
 
 #endif // CUTELLIPSOID_H

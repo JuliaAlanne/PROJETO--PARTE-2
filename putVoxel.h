@@ -3,17 +3,18 @@
 
 #include <FiguraGeometrica.h>
 
+#include "Sculptor.h"
 
 class PutVoxel : public FiguraGeometrica
 {
-    int x, int y, int z;
-    public:
-        PutVoxel(int x, int y, int z);
-        virtual ~PutVoxel();
-
-    protected:
-
     private:
+    int x,  y,  z;
+    public:
+        PutVoxel(int x, int y, int z,float r, float g,float b, float alpha);
+        virtual ~PutVoxel();
+        void draw(Sculptor &t);
+
+
 };
 
 #endif // PUTVOXEL_H
